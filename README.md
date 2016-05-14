@@ -47,8 +47,22 @@ As you can see, each item is created using android.support.design.widget.TabItem
 You can do this in java code, as well. In my case, I like this solution because I can see the TabLayout growing while modifying activity_main.xml 
 
 
-
-
-
+## Dependencies
+The MainActivity extends AppCompatActivity, therefore you must include 
+```xml
+    compile 'com.android.support:appcompat-v7:23.3.0'
+```
+in the dependencies section of build.gradle of the Module: app
+  
+TabLayout, TabItem and ViewPager are components of com.android.support, therefore you must include 
+```xml
+dependencies {
+...
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+}
+...
+```
 
 
